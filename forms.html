@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div id="html-forms">
+    	<form action="/action_page.php">
+			<label for="fname">First Name:</label><br>
+  			<input type="fname" id="fnamefname" name="fname"><br>
+		  	<label for="lname">Last Name:</label><br>
+		  	<input type="lname" id="lname" name="lname"><br>
+			
+		
+			<h2>Gender/Sex</h2>	
+		  	<input type="radio" id="male" name="gender" value="MALE">
+  		  	<label for="html">MALE</label><br>
+                  	<input type="radio" id="female" name="gender" value="FEMALE">
+		  	<label for="css">FEMALE</label><br>
+			
+			<h2>Sports</h2>	
+			<input type="checkbox" id="sports1" name="sports1" 		value="basketball">
+		  	<label for="sports1"> Basketball</label><br>
+		  	<input type="checkbox" id="sports2" name="sports2" value="volleyball">
+		  	<label for="sports2"> Volleyball</label><br>
+		  	<input type="checkbox" id="sports3" name="sports3" value="badminton">
+		  	<label for="sports3"> Badminton</label><br>
+            <input type="checkbox" id="sports4" name="sports4" value="tennis">
+		  	<label for="sports4"> Tennis</label><br>
+            <input type="checkbox" id="sports5" name="sports5" value="sepak">
+		  	<label for="sports5"> Sepak</label><br>
+			
+			<h2>Favorite Color</h2>	
+			<label for="favcolor">Select your favorite color:</label>
+  			<input type="color" id="favcolor" name="favcolor"><br>
+			
+			<h2>Birthday</h2>
+			<label for="birthday">Birthday:</label>
+  			<input type="date" id="birthday" name="birthday"><br>
 
+			
+			
+			<h2>2x2 picture</h2>	
+			<label for="myfile">Select a image:</label><br>
+  			<input type="file" id="myfile" name="myfile"><br>
+			
+			<h2>Age</h2>	
+			<label for="age">Age (between 1 and 100):</label><br>
+  			<input type="number" id="age" name="age" min="1" max="100"><br>
+			
+			<h2>Number of Siblings</h2>	
+			<label for="siblings">Siblings (between 0 and 100):</label><br>
+  			<input type="range" id="siblings" name="siblings" min="0" max="100"><br>
+			
+			
+			<h2>Mobile Number</h2>	
+			<label for="phone">Enter your phone number:</label><br>
+  			<input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+			
+            
+			<br><input type="submit" value="SUBMIT"><br>
+			<input type="reset" value="RESET"><br>
+			
+		</form>
+	</div>
+
+</body>
+</html>
