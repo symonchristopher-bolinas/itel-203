@@ -6,18 +6,30 @@
 <body>
 	<div id="html-forms">
     	<form action="/action_page.php">
+			<h2>Player Form</h2>
+			<h3>Player Name</h3>
 			<label for="firstname">First Name:</label><br>
   			<input type="text" id="firstname" name="firstname"><br>
+			<label for="middlename">First Name:</label><br>
+  			<input type="text" id="middlename" name="middlename"><br>
 		  	<label for="lastname">Last Name:</label><br>
 		  	<input type="text" id="lastname" name="lastname"><br>
 			
-			<h2>Gender/Sex</h2>	
+			<h3>Player Gender/Sex</h3>	
 		  	<input type="radio" id="male" name="gender" value="MALE">
   		  	<label for="male">MALE</label><br>
                   	<input type="radio" id="female" name="gender" value="FEMALE">
 		  	<label for="female">FEMALE</label><br>
 			
-			<h2>Sports</h2>	
+			<h3>Player Birthday</h3>
+			<label for="birthday">Birthday:</label>
+  			<input type="date" id="birthday" name="birthday"><br>
+		
+			<h3>Player Age</h3>	
+			<label for="age">Age (between 18 and 35):</label><br>
+  			<input type="number" id="age" name="age" min="18" max="35"><br>
+		
+			<h3>Sports</h3>	
 			<input type="checkbox" id="sports1" name="sports1" value="basketball">
 		  	<label for="sports1"> Basketball</label><br>
 		  	<input type="checkbox" id="sports2" name="sports2" value="volleyball">
@@ -29,27 +41,19 @@
             		<input type="checkbox" id="sports5" name="sports5" value="sepak">
 		  	<label for="sports5"> Sepak</label><br>
 			
-			<h2>Favorite Color</h2>	
-			<label for="favcolor">Select your favorite color:</label>
-  			<input type="color" id="favcolor" name="favcolor"><br>
+			<h3>Jersy Color</h3>	
+			<label for="jersycolor">Select your jersy color:</label>
+  			<input type="color" id="jersycolor" name="jersycolor"><br>
 			
-			<h2>Birthday</h2>
-			<label for="birthday">Birthday:</label>
-  			<input type="date" id="birthday" name="birthday"><br>
-			
-			<h2>2x2 picture</h2>	
+			<h3>2x2 picture</h3>	
 			<label for="myfile">Select a image:</label><br>
   			<input type="file" id="myfile" name="myfile"><br>
 			
-			<h2>Age</h2>	
-			<label for="age">Age (between 1 and 100):</label><br>
-  			<input type="number" id="age" name="age" min="1" max="100"><br>
+			<h3>Contract</h3>	
+			<label for="contract">Siblings (between 1 and 10 years):</label><br>
+  			<input type="range" id="contract" name="contract" min="1" max="10"><br>
 			
-			<h2>Number of Siblings</h2>	
-			<label for="siblings">Siblings (between 0 and 10):</label><br>
-  			<input type="range" id="siblings" name="siblings" min="0" max="10"><br>
-			
-			<h2>Mobile Number</h2>	
+			<h3>Mobile Number</h3>	
 			<label for="phone">Enter your phone number:</label><br>
   			<input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
 			
