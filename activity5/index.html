@@ -9,28 +9,48 @@
 
 <body> 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 *{
   font-family: "Roboto", sans-serif;
-  max-width: 1440px
 }
 body, html{
   overflow-x: hidden;
   margin: 0;
 }
+.grey{
+background: #F5F5F6
+}
+.pink{
+background: #FC0E52
+}
+.header{
+padding: 48px 24px;
+}
+.header .navv{
+gap: 24px;
+}
+.card{
+box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+border: none;
+}
 main{
-  padding-top: 120px;
   max-width: 100%;
 }
 main h1{
   font-size: 72px;
   font-weight: 700;
 }
+main h3{
+font-weight: 700;
+font-size: 60px;
+}
 .section{
   min-height: 100%;
 }
 .profile{
-  font-family: Roboto, sans-serif;
-  position: relative;
+align-items: center;
+padding: 96px;
 }
 .profile .shape-bg{
   position: absolute;
@@ -47,27 +67,63 @@ main h1{
   z-index: 2;
 }
 .servicesection{
-  padding: 60px 0 0 0;
   background: #F4EAE466;
+padding: 96px 96px 0 96px;
+}
+.servicesection .title{
+font-size: 48px;
 }
 .servicesection .card{
   min-height: 470px;
+  padding: 48px;
+}
+.servicesection a{
+text-decoration: none;
+color: #000;
 }
 .servicesection .cards-wrapper{
   margin-bottom: -25px;
 }
+.Base2{
+background: #FC0E52;
+padding-left: 96px;
+padding-right: 96px;
+}
+.Base2 a{
+text-decoration: none;
+color: #FFF;
+}
 .logos{
-  padding: 50px 0;
+  padding: 96px;
+}
+.careers{
+background: rgba(244, 234, 228, 0.4);
+}
+.careers .content{
+padding: 96px;
+gap: 48px;
+}
+.articles{
+padding: 96px;
+}
+.articles .card-body{
+padding: 24px;
+}
+footer{
+padding: 96px;
 }
 footer h1{
   font-size: 72px;
   font-weight: 700;
 }
+footer .line{
+border-top: 1px solid #FFF;
+}
 
 </style>
 
-    <nav class="navbar navbar-expand-lg navbar-light py-3" id="navbar">
-     <div class="container" style="padding: 48px 96px;">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+     <div class="container header">
       <a class="fw-bold me-auto fs-4">
       <img src="Jajja Logo.png">
       </a>
@@ -76,7 +132,7 @@ footer h1{
       </button>
       <div class="collapse navbar-collapse text-lg-end justify-content-lg-end" id="navbarNav">
       <ul class="navbar-nav mt-lg-0 mt-5">
-       <li class="nav-item">
+       <li class="nav-item navv">
         <a class="nav-link navigator" href="#">Tjänster</a></li>
        <li class="nav-item mx-lg-3">
         <a class="nav-link navigator" href="#">Kunder</a></li>
@@ -86,37 +142,33 @@ footer h1{
         <a class="nav-link navigator" href="#">Karriär</a></li>
        <li class="nav-item mx-lg-3">
         <a class="nav-link navigator" href="#">Om oss</a></li>
-       <li class="nav-item mx-lg-3 d-none d-lg-block">
-        <a href="#" class="nav-link btn btn-dark rounded-pill text-white px-3">Kontakt</a></li>
+       <li class="nav-item mx-lg-3">
+        <a href="#" class="btn btn-dark rounded-pill text-white px-3">Kontakt</a></li>
       </ul>
       </div>
      </div>
     </nav>
     
     <main>
-     <section class="profile mt-4" id="profile">
+     <section class="profile mt-4">
       <div class="shape-bg">
       </div>
-       <div class="container">
+       <div class="container hero">
         <div class="row align-items-center justify-content-center gy-5">
          <div class="col-md py-3">
           <div class="mb-5">
            <p class="fs-5">Hallå där 👋</p>
            <h1>Vi driver rätt trafik till din webbplats.</h1>
           </div>
-          <a href="#" class="fs-5 link-light rounded-pill btn" style="background: #FC0E52">Läs mer</a>
+          <a href="#" class="fs-5 link-light rounded-pill btn pink">Läs mer</a>
          </div>
-         <div class="col-md py-3 ">
-         <div class="row justify-content-center">
-          <div class="">
+          <div class="col-md-6 col-sm-12">
           <img src="JAJJA_2020_020 1.png" class="profile-img">
           </div>
          </div>
         </div>
-       </div>
-      </div>
      </section>
-     <section class="servicesection" id="servicesection">
+     <section class="servicesection">
       <div class="container">
        <div class="mb-3">
        <p class="my-1">Så här jobbar vi</p>
@@ -124,57 +176,57 @@ footer h1{
        </div>
       <div class="row gy-4 cards-wrapper">
        <div class="col-md">
-        <div class="card" style="box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08)">
+        <div class="card">
          <div class="card-body p-5">
          <img src="Imgseo-icon.png">
           <div class="my-3">
-          <h2 class="fw-bolder">SEO</h2>
+          <h2 class="fw-bolder title">SEO</h2>
           <p class="fs-6">Din målgrupp måste hitta din webbplats på Google om du ska få rätt resultat</p>
            <div class="mt-2">
             <p class="d-flex align-items-center">
-            <img src="Icon.png">Teknisk optimerad sajt</p>
+            <img src="Icon.png"><a href="#">&nbsp; Teknisk optimerad sajt</a></p>
             <p class="d-flex align-items-center">
-            <img src="Icon.png">Innehåll på sajten</p>
+            <img src="Icon.png"><a href="#">&nbsp; Innehåll på sajten</a></p>
             <p class="d-flex align-items-center">
-            <img src="Icon.png">Länkkraft</p>
+            <img src="Icon.png"><a href="#">&nbsp; Länkkraft</a></p>
            </div>
           </div>
          </div>
         </div>
        </div>
        <div class="col-md">
-        <div class="card" style="box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08)">
+        <div class="card">
          <div class="card-body p-5">
          <img src="Imgsem-icon.png">
           <div class="my-3">
-          <h2 class="fw-bolder">SEM</h2>
+          <h2 class="fw-bolder title">SEM</h2>
           <p class="fs-6">Lönsam och effektiv annonsering med Google Ads ger dig rätt resultat</p>
            <div class="mt-2">
            <p class="d-flex align-items-center">
-           <img src="Icon.png">Google Ads Sök</p>
+           <img src="Icon.png"><a href="#">&nbsp; Google Ads Sök</a></p>
            <p class="d-flex align-items-center">
-           <img src="Icon.png">Google Ads Display</p>
+           <img src="Icon.png"><a href="#">&nbsp; Google Ads Display</a></p>
            <p class="d-flex align-items-center">
-           <img src="Icon.png">Google Ads Shopping</p>
+           <img src="Icon.png"><a href="#">&nbsp; Google Ads Shopping</a></p>
            </div>
           </div>
          </div>
         </div>
        </div>
        <div class="col-md">
-        <div class="card" style="box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08)">
+        <div class="card">
          <div class="card-body p-5">
          <img src="Imgsma-icon.png">
           <div class="my-3">
-          <h2 class="fw-bolder">SMA</h2>
+          <h2 class="fw-bolder title">SMA</h2>
           <p class="fs-6">Annonsera i sociala medier med rätt verktyg för att nå din målgrupp och få resultat</p>
            <div class="mt-2">
            <p class="d-flex align-items-center">
-           <img src="Icon.png">Facebook</p>
+           <img src="Icon.png"><a href="#">&nbsp; Facebook</a></p>
            <p class="d-flex align-items-center">
-           <img src="Icon.png">Instagram</p>
+           <img src="Icon.png"><a href="#">&nbsp; Instagram</a></p>
            <p class="d-flex align-items-center">
-           <img src="Icon.png">LinkedIn</p>
+           <img src="Icon.png"><a href="#">&nbsp; LinkedIn</a></p>
            </div>
           </div>
          </div>
@@ -182,55 +234,54 @@ footer h1{
        </div>
       </div>
      </div>
-     <div class="py-5 footer" style="background: #FC0E52">
+     </section>
+     <section class="py-5 footer Base2">
       <div class="container">
-      <h3 class="text-white my-5" style="font-weight: 700;
-font-size: 60px;">Organisk och köpt trafik kompletterar varandra</h3>
+      <h3 class="text-white my-5">Organisk och köpt trafik kompletterar varandra</h3>
       <p class="d-flex align-items-center text-white fs-6">
-      <span class="me-2 bx bx-chevron-right fs-5"></span> Så här jobbar vi</p>
+      <img src="Icon.png"><a href="#">&nbsp; Så här jobbar vi</a></p>
       </div>
-     </div>
     </section>
-    <section class="logos" id="logos">
+    <section class="logos">
      <div class="container">
      <p class="fs-5">Kunder</p>
      <h1>Ett urval av kunder som vi jobbar eller har jobbat med</h1>
      <p class="mt-3 ms-3">Läs mer om våra kunder</p>
       <div class="row">
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Google.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Netflix.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Spotify.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Revolut.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Airbnb.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Uber.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Hnm.png">
        </div>
-       <div class="col-md-3 col-sm-6">
+       <div class="col-6 col-md-3">
        <img src="Fb.png">
        </div>
       </div>
      </div>
     </section>
-    <section class="careers" id="careers">
-     <div class="row gx-0">
-      <div class="col-md">
-      <img src="JAJJA_2020_014 1.png" class="img-fluid w-100">
-      </div>
-      <div class="col-md" style="background: #F4EAE466">
-       <div class="px-5 d-flex flex-column align-items-start justify-content-center h-100 py-5">
+    <section class="careers">
+     <div class="container">
+      <div class="row">
+       <div class="col-md-6 col-sm-12">
+       <img src="JAJJA_2020_014 1.png">
+       </div>
+       <div class="col-md-6 col-sm-12 content">
        <p>Häng med!</p>
        <h1>Väx och må bra med oss</h1>
        <p class="mt-4">Vi vill att alla människor och företag ska blomstra. Vår ambition är att alla som jobbar på Jajja ska må bra, utvecklas och lyckas. Samma saker gäller alla som vi kommer i kontakt med. Vi blir riktigt lyckliga av att vara med och hjälpa våra kunder att växa.</p>
@@ -244,10 +295,10 @@ font-size: 60px;">Organisk och köpt trafik kompletterar varandra</h3>
      <h1>Allt från Jajja!</h1>
       <div class="mt-4">
       <ul class="nav d-none d-md-flex">
-      <li class="nav-item me-4"><a href="#" class="nav-link btn rounded-pill text-white px-4" style="background: #FC0E52">Allt</a></li>
-      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4" style="background: #F5F5F6">Bolaget</a></li>
-      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4" style="background: #F5F5F6">Kunskap</a></li>
-      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4" style="background: #F5F5F6">Kunder</a></li>
+      <li class="nav-item me-4"><a href="#" class="nav-link btn rounded-pill text-white px-4 pink">Allt</a></li>
+      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4 grey">Bolaget</a></li>
+      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4 grey">Kunskap</a></li>
+      <li class="nav-item mx-4"><a href="#" class="nav-link btn rounded-pill text-dark px-4 grey">Kunder</a></li>
       </ul>
       <select name="" class="d-block d-lg-none d-md-none bg-light form-select">
       <option value="">Allt</option>
@@ -343,8 +394,8 @@ font-size: 60px;">Organisk och köpt trafik kompletterar varandra</h3>
       <p>Tynäsgatan 10<br>652 16 Karlstad</p>
       </div>
      </div>
-     <hr class="solid" style="border-top: 1px solid #FFF;">
-     <p class="mt-5 text-white px-lg-5">© 2021 Jajja Media Group AB <br>Den här sidan innehåller cookies.</p>
+     <hr class="line">
+     <p class="mt-5 text-white">&copy; 2021 Jajja Media Group AB <br>Den här sidan innehåller cookies.</p>
       </div>
      </footer>
 
